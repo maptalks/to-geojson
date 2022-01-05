@@ -44,7 +44,6 @@
     "@types/mocha": "^9.0.0",
     "@types/topojson-client": "^3.1.0",
     "@types/wellknown": "^0.5.1",
-    "@types/xmldom": "^0.1.31",
     "chai": "^4.3.4",
     "fs-extra": "^10.0.0",
     "mocha": "^9.1.3",
