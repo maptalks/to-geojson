@@ -1,4 +1,4 @@
-import toGeoJSON from '@mapbox/togeojson';
+import toGeoJSON from '@tmcw/togeojson';
 import { GeoJSON } from 'geojson';
 import { register } from './registry';
 import { ConvertOptions } from './types';

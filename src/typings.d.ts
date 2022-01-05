@@ -1,2 +1,2 @@
-declare module '@mapbox/togeojson';
+declare module '@tmcw/togeojson';
 declare module 'csv2geojson';

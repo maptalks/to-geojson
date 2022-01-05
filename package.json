@@ -55,7 +55,7 @@
   },
   "dependencies": {
     "@mapbox/polyline": "^1.1.1",
-    "@mapbox/togeojson": "^0.16.0",
+    "@tmcw/togeojson": "^4.5.0",
     "@xmldom/xmldom": "^0.8.0",
     "csv2geojson": "^5.1.1",
     "topojson-client": "^3.1.0",
