@@ -4,9 +4,9 @@ import { register } from './registry';
 import { ConvertOptions } from './types';
 import { parseXML } from './util';
 
-function convert(data: any, options?: ConvertOptions): Promise<GeoJSON> {
+export function gpx(data: any, options?: ConvertOptions): Promise<GeoJSON> {
   const doc = parseXML(data);
   return Promise.resolve(toGeoJSON.gpx(doc));
 }
 
-register('gpx', convert);
+register('gpx', gpx);

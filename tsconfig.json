@@ -12,4 +12,9 @@
     "outDir": "dist"
   },
   "include": ["src"],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  }
 }

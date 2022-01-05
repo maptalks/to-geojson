@@ -1,12 +1,12 @@
 // XXX:
-import './csv';
-import './geojson';
-import './gpx';
-import './kml';
-import './osm';
-import './polyline';
-import './topojson';
-import './wkt';
+export * from './csv';
+export * from './geojson';
+export * from './gpx';
+export * from './kml';
+export * from './osm';
+export * from './polyline';
+export * from './topojson';
+export * from './wkt';
 
 export * from './types';
 export * from './registry';

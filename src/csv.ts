@@ -3,7 +3,7 @@ import { GeoJSON } from 'geojson';
 import { register } from './registry';
 import { ConvertOptions } from './types';
 
-function convert(data: any, options?: ConvertOptions): Promise<GeoJSON> {
+export function csv(data: any, options?: ConvertOptions): Promise<GeoJSON> {
   return new Promise((resolve, reject) => {
     options = options || {};
     options.lonfield = options.lon;
@@ -17,4 +17,4 @@ function convert(data: any, options?: ConvertOptions): Promise<GeoJSON> {
   });
 }
 
-register(['csv', 'xlsx'], convert);
+register(['csv', 'xlsx'], csv);

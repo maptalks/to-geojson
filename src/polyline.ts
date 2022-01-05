@@ -3,7 +3,7 @@ import { GeoJSON, LineString } from 'geojson';
 import { register } from './registry';
 import { ConvertOptions } from './types';
 
-function convert(data: any, options?: ConvertOptions): Promise<GeoJSON> {
+export function polyline(data: any, options?: ConvertOptions): Promise<GeoJSON> {
   options = options || {};
   const coords = decode(data, options.precision);
   const gj: LineString = { type: 'LineString', coordinates: [] };
@@ -14,4 +14,4 @@ function convert(data: any, options?: ConvertOptions): Promise<GeoJSON> {
   return Promise.resolve(gj);
 }
 
-register('polyline', convert);
+register('polyline', polyline);

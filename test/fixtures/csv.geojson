@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"name":"Hello World"},"geometry":{"type":"Point","coordinates":[20,10]}}]}

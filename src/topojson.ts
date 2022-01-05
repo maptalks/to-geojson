@@ -4,7 +4,7 @@ import { Topology } from 'topojson-specification';
 import { register } from './registry';
 import { ConvertOptions } from './types';
 
-function convert(data: any, options?: ConvertOptions): Promise<GeoJSON> {
+export function topojson(data: any, options?: ConvertOptions): Promise<GeoJSON> {
   const json: GeoJSON = {
     type: 'FeatureCollection',
     features: [],
@@ -23,4 +23,4 @@ function convert(data: any, options?: ConvertOptions): Promise<GeoJSON> {
   return Promise.resolve(json);
 }
 
-register('topojson', convert);
+register('topojson', topojson);
