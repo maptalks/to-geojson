@@ -4,6 +4,8 @@ import typescript from 'rollup-plugin-typescript2';
 
 import pkg from './package.json';
 
+const deps = Object.keys(pkg.dependencies);
+
 export default {
   input: 'src/index.ts',
   output: [
@@ -11,7 +13,7 @@ export default {
     { file: pkg.module, format: 'esm', sourcemap: true },
   ],
   // Indicate here external modules you don't wanna include in your bundle (i.e.: 'lodash')
-  external: [],
+  external: [...deps],
   watch: {
     include: 'src/**',
   },
