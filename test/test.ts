@@ -14,6 +14,13 @@ describe('formats', async () => {
     expect(gj).to.deep.equal(want);
   });
 
+  it('csv with options', async () => {
+    const data = await readAsText('./test/data/options.csv');
+    const gj = await csv(data, {lon: 'a', lat: 'b'});
+    const want = await readJSON('./test/fixtures/options.geojson');
+    expect(gj).to.deep.equal(want);
+  });
+
   it('geojson', async () => {
     const data = await readAsText('./test/data/geojson.geojson');
     const gj = await geojson(data);
@@ -32,6 +39,13 @@ describe('formats', async () => {
     const data = await readAsText('./test/data/kml.kml');
     const gj = await kml(data);
     const want = await readJSON('./test/fixtures/kml.geojson');
+    expect(gj).to.deep.equal(want);
+  });
+
+  it('kml 3cm', async () => {
+    const data = await readAsText('./test/data/3cm.kml');
+    const gj = await kml(data);
+    const want = await readJSON('./test/fixtures/3cm.geojson');
     expect(gj).to.deep.equal(want);
   });
 
