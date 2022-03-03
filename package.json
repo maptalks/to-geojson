@@ -1,6 +1,6 @@
 {
   "name": "@wsw0108/to-geojson",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Convert some formats to GeoJSON.",
   "main": "dist/to-geojson.cjs.js",
   "module": "dist/to-geojson.esm.js",
